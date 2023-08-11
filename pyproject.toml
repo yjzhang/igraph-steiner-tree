@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "igraph-steiner-tree"
+version = "0.0.1"
+authors = [
+  { name="Yue Zhang", email="yue.zhang@isbscience.org" },
+]
+description = "Implementation of steiner tree approximation algorithms in igraph."
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "python-igraph",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/yjzhang/igraph_steiner_tree"
+"Bug Tracker" = "https://github.com/yjzhang/igraph_steiner_tree/issues"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
